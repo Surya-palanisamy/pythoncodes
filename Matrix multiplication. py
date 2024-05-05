@@ -13,4 +13,4 @@ for i in range(len(A)):
 
 for r in result: 
 
-Print(r)
+     print(r)
