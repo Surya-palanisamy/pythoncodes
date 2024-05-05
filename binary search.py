@@ -1,23 +1,22 @@
-def binary_search_alphabet(arr, target):
-    left = 0
-    right = len(arr) - 1
-    
-    while left <= right:
-        mid = (left + right) // 2
-        if arr[mid] == target:
+def binary_search(arr, low, high, x):
+    if high >= low:
+        mid = (high + low) // 2
+        if arr[mid] == x:
             return mid
-        elif arr[mid] < target:
-            left = mid + 1
+        elif arr[mid] > x:
+            return binary_search(arr, low, mid - 1, x)
         else:
-            right = mid - 1
-            
-    return -1
+            return binary_search(arr, mid + 1, high, x)
+    else:
+        return -1
+
+arr = [2, 3, 4, 10, 40]
+x = 10
 
 
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-target_letter = 'g'
-result = binary_search_alphabet(alphabet, target_letter)
+result = binary_search(arr, 0, len(arr)-1, x)
+
 if result != -1:
-    print(f"Letter found at index {result}.")
+    print("Element is present at index", str(result))
 else:
-    print("Letter not found.")
+    print("Element is not present in array")
