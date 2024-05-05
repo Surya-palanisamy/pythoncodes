@@ -1,0 +1,9 @@
+def circulate(lst, n):
+    
+    return lst[n:] + lst[:n]
+
+
+my_list = list(map(int,input("Enter the elements of list : ").split())
+k = int(input("Enter the num to rotate : "))
+rotated_list = circulate(my_list, k)
+print(rotated_list)
