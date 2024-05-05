@@ -1,0 +1,19 @@
+max_count = 0 
+most_repeated_word = ""
+word_counts = {}
+
+with open("data.txt", "r") as file:
+    for line in file:
+        words = line.lower().replace(',', '').replace('.', '').split()
+        for word in words:
+            if word in word_counts:
+                word_counts[word] += 1
+            else:
+                word_counts[word] = 1
+
+for word, count in word_counts.items():
+    if count > max_count:
+        max_count = count
+        most_repeated_word = word
+
+print("Most repeated word:", most_repeated_word)
