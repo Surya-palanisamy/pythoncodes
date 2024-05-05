@@ -4,4 +4,6 @@ arguments = sys.argv[1:]
 num_arguments = len(arguments)
 print(f"Number of Arguments: {len(arguments)}")
 for arg in arguments:
-    print(f"Argument: {arg}")
+    i=1
+    print(f"Argument {i}: {arg}")
+    i+=1
