@@ -1,4 +1,4 @@
-'''
+
 l = ["apple", "orange", "kiwi", "grape"]
 print(l)
 print(l[0])
@@ -117,4 +117,4 @@ elif d == 6:
     print(d, "th day is Friday")
 elif d == 7:
     print(d, "th day is Saturday")
-'''
+
