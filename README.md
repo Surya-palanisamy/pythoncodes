@@ -4,5 +4,5 @@
 
 To clone this repository : 
 ```bash 
-git clone https://github.com/Iamsuryapalanisamy/pythoncodes
+git clone https://github.com/Surya-palanisamy/pythoncodes
 ```
