@@ -3,6 +3,6 @@
 * Add contents.
 
 To clone this repository : 
-```bash 
+```
 git clone https://github.com/Surya-palanisamy/pythoncodes
 ```
